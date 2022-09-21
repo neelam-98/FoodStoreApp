@@ -1,0 +1,140 @@
+.menucontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.menucard{
+    width: 488px;
+    height: 541px;
+    text-align: left;
+    border: 1px solid;
+    border-color: lightgrey;
+    margin: 20px;
+    padding: 30px;
+}
+.nocard{
+    color: gray;
+    border-radius: 50%;
+    border-color: gray;
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.pname{
+    color: gray;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.hname{
+    font-size: 40px;
+}
+.image{
+    width: 420px;
+    height: 250px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    box-shadow: 10px 10px 10px 5px lightgray;
+}
+.foodblock{
+    display: flex;
+
+}
+.foodorder{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.foodmohalla{
+    color: chocolate;
+    margin-top: 60px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Verdana;
+    font-weight: bold;
+    margin-left:-44px;
+}    
+.cart_icon{
+    margin-top: 44px;
+    width: 120px;
+    height: 120px;
+    margin-right: 18px;
+    border-radius: 60%;
+}
+.MenuCardItem{
+    display: flex;
+    margin: 50px;
+}
+.leftblock{
+    width: 600px;
+    height: 300px;
+}
+.menucardItem_img{
+    height: 300px;
+    width: 500px;
+}
+.rightblock{
+    width: 800px;
+    height: 300px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+}
+.addcart_btn{
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color: green;
+}
+.category_click{
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+.Categories{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.cart_length{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 627px;
+    top: 50px;
+    padding: 2px;
+    text-align: center;
+}
+.clearbtn{
+    margin-left: 20px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: black; 
+}
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.deletebtn{
+    height: 35px;
+    width: 150px;
+    color: white;
+    background-color: black; 
+}
+.cart_left_block{
+    margin-left: 50px;
+}
+.cart_right_block{
+    margin-left: 50px;
+}

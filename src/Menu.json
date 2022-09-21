@@ -1,0 +1,125 @@
+[
+    {
+        "id": "0",
+        "no":1,
+        "name" : "Sandwich",
+        "category":"Breakfast",
+        "description":"Broccoli rabe is even more nutritionally dense than broccoli.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx-0iiYvG5xz5ppiuihDM-uPN_UNXFZcBBng&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "1",
+        "no":2,
+        "name" : "Aloo Paratha",
+        "category":"Breakfast",
+        "description":"Cabbage provides a decent source of vitamins C and K1, and it may potentially lower cancer risk.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9r8Xe-7S532KYKBap8D3-bty-7Eyhvh07g&usqp=CAU",
+        "quantity":1,
+        "Price":50
+
+    },
+    {
+        "id": "2",
+        "no":3,
+        "name" : "Idli Sambar",
+        "category":"Breakfast",
+        "description":"Carrots are a root vegetable that supply a decent source of beta-carotenoids.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr4MHdIjde0bjPbF5fY_4tgJrKYTfDgEdZ2w&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "3",
+        "no":4,
+        "name" : "Veg Biryani",
+        "category":"Lunch",
+        "description":"Coconut water is a clear liquid found within fresh coconuts.it's a refreshing drink for those who enjoy the taste.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPbQMgD79WJwULTkrE5C-MsHcUMyKozMq-Kw&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "4",
+        "no":5,
+        "name" : "Dal Tadka",
+        "category":"Lunch",
+        "description":"It's much easier to consume too many calories from a few glasses of fruit juice per day than it is by eating multiple whole fruits.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNEiDZ41i6GfeeR3B-KM43MBUbchTlknHHCw&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "5",
+        "no":6,
+        "name" : "Chole Bhature",
+        "category":"Lunch",
+        "description":"Diet soda drinks made with a sweetener are likely healthier alternatives to sugar-sweetened beverages.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp079q5Nw9jRJ9fFDxgCDx6OZtp3jNebwXGQ&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "6",
+        "no":7,
+        "name" : "Chicken Biryani",
+        "category":"Dinner",
+        "description":"Plant-based milks are often devised to have a similar nutritional profile to regular dairy milk. they are usually fortified with vitamin B12 and vitamin D.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPROwaewo8D6jiT19lOwNrQrl6IiRCFC4wg&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "7",
+        "no":8,
+        "name" : "Paneer Masala",
+        "category":"Dinner",
+        "description":"Milkshakes are another trendy dairy drink, but they often contain large amounts of added sugar (and calories).",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRevx2HQgiGku79bceL3Os3HEO2-sI812SLrA&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "8",
+        "no":9,
+        "name" : "Punjabi Thali",
+        "category":"Dinner",
+        "description":"Cherry contains lots of antioxidants that may help reduce the risk of cancer and cardiovascular disease.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7d_7OEfnS5lou5JyPn75qqB9H-2BbqGLaQ&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "9",
+        "no":10,
+        "name" : "Vada Pav",
+        "category":"Evening",
+        "description":"It has many health benefits, including being good for your skin and helping to lower blood pressure.",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGGjp55wI4CTAg9j50isN2J4BQ4FWJQYFDDw&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "10",
+        "no":11,
+        "name" : "Samosa",
+        "category":"Evening",
+        "description":"Due to the ideal climate and great soil conditions, these pistachios have a vibrant green color and an intense, complex, and citrusy flavor. ",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBaq4Tg743zKNnRi1c_eEdVoLRp9JreJefQ&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    },
+    {
+        "id": "11",
+        "no":12,
+        "name" : "Khaman",
+        "category":"Evening",
+        "description":"They improve heart health, help with regulating skin-related problems, stimulate the digestive system, boost the immune system, and improve hormone function. ",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsS9KXqFRwHo2g9-AVMaOtUluz1jj94um8Ug&usqp=CAU",
+        "quantity":1,
+        "Price":50
+    }
+    
+]
+
