@@ -2,16 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    position: relative;
     
 }
 .menucard{
     width: 488px;
-    height: 541px;
+    height: 620px;
     text-align: left;
     border: 1px solid;
     border-color: lightgrey;
     margin: 20px;
     padding: 30px;
+    background-color: white;
 }
 .nocard{
     color: gray;
@@ -71,10 +73,11 @@
 .MenuCardItem{
     display: flex;
     margin: 50px;
+    box-shadow: 20px 20px 18px burlywood;
 }
 .leftblock{
     width: 600px;
-    height: 300px;
+    height: 320px;
 }
 .menucardItem_img{
     height: 300px;
@@ -115,7 +118,6 @@
     text-align: center;
 }
 .clearbtn{
-    margin-left: 20px;
     height: 30px;
     width: 100px;
     color: white;
@@ -134,7 +136,27 @@
 }
 .cart_left_block{
     margin-left: 50px;
+    width: 700px;
 }
 .cart_right_block{
-    margin-left: 50px;
+    margin-left: 200px;
+    /* text-align: justify; */
+    width: 700px;
+}
+.ordernowDiv{
+    text-align: center;
+}
+.ordernow{
+    width: 100px;
+    height: 30px;
+    color: black;
+    background-color: lightgray;
+}
+.cardsection{
+    width: 600px;
+    margin-left: 40px;
+}
+.cardelement{
+    margin-left: 40px;
+    width: 600px;
 }

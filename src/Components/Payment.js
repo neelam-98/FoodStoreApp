@@ -1,13 +1,15 @@
-import React from 'react';
-import { Divider } from 'antd';
+import React from "react";
+import Header from "./Header";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import CheckoutForm from "./CheckoutForm";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
-import { clearCartItem, deleteCartItem, totalPrice } from '../Action/actions';
-import Header from './Header';
-import "../css/App.css"
-import { useNavigate } from 'react-router-dom';
+import { clearCartItem, deleteCartItem, totalPrice } from "../Action/actions";
 
+const stripePromise = loadStripe("pk_test_51LmZZxSJwi24df8JJhIgXg79aF8KCM4NGqp6D8HfbD4ODxegEBG3RhRrwCFJj47P4XlzjGGc3wdJf4A5Dm9a4YW200wE90hT7A");
 
-const Cart = () => {
+const Payment = () => {
 
   const dispatch = useDispatch () ;
   const navigate = useNavigate();
@@ -25,33 +27,28 @@ const Cart = () => {
   const orderNowClick = () => {
     navigate('/payment');
   }
-
   return (
     <>
     <Header/>
     <br/>
     <br/>
+    <button  className='clearbtn'  onClick={() => {clearClick()}}>clear cart</button>
     <br/>
     <br/>
       {
         menuState && menuState?.length > 0 && menuState?.map((menuItem)=>{
           console.log("menuItem",menuItem)
-          const {id, name, image, Price, description} = menuItem?.MenuList
+          const {id, name, image, Price} = menuItem?.MenuList
           return(
               <>
                 <div className='cart'>
                   <div className='cart_left_block'>
-                    <img src={image} alt="#" width={580} height={380}/> 
+                    <img src={image} alt="#" width={580} height={400}/> 
                   </div>
-                  <Divider
-                    type="vertical"
-                    style={{ height: "380px"}}
-                  />
                   <div className='cart_right_block'>
                     <p className="pname">{name}</p>
                     <h1 className='hname'>{name}</h1>
                     <h3>INR : {Price}</h3>
-                    <p>{description}</p>
                     <h2>Total Price :Rs {menuItem?.Price}</h2>
                     <select onChange = { (e) => handleChange(e.target.value,id)}>
                       <option value="quantity" >Select Quantity</option>
@@ -62,9 +59,10 @@ const Cart = () => {
                     </select>
                     <br/>
                     <br/>
-                    <button className='deletebtn' onClick={()=>dispatch(deleteCartItem(menuItem))}>Delete from Cart</button> 
+                    <button className='deletebtn' onClick={()=>dispatch(deleteCartItem(menuItem))}>Delete from Order</button> 
                     <br/>
                     <br/>
+                    
                   </div>
                 </div>
                 <br/>        
@@ -72,13 +70,12 @@ const Cart = () => {
           );
         })
       }
+    <Elements stripe={stripePromise}>
+        <CheckoutForm />
+    </Elements>
     <br/>
-    <div className='ordernowDiv'>
-      <button  className='clearbtn'  onClick={() => {clearClick()}}>clear cart</button>
-      <br/><br/>
-      <button onClick={() => orderNowClick()} className="ordernow">Order Now</button>
-    </div>
     </>
   )
- }
-export default Cart;
+}
+
+export default Payment;

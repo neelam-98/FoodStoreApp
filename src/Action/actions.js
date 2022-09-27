@@ -38,6 +38,7 @@ export const clearCartItem = (Menu) => {
     }
 }
 
+//action for total price
 export const totalPrice = (quantity, id) => {
     console.log("quantity and id for total price",quantity, id); 
     return (dispatch) => {
@@ -47,6 +48,19 @@ export const totalPrice = (quantity, id) => {
             quantity : quantity,
             id : id
             
+        }
+        })
+    }
+}
+
+//action for order now
+export const orderNow = (Menu) => {
+    console.log("action for order now",Menu);
+    return (dispatch) => {
+        dispatch({
+        type:"ORDER_MENU_ITEM",
+        payload : {
+            Menu:Menu
         }
         })
     }
